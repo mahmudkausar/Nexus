@@ -11,24 +11,26 @@ a{
     text-decoration: none;
 }
 .container{
-    width: 1280px;
+    max-width: 1280px;
     margin: 0 auto;
 }
 
 .main-body{
-    padding: 24px 72px 0 72px;
     margin: 0 auto;
 }
 /* ===================================================== */
 
 nav{
-    display: fixed;
+    position: sticky;
+    top: 24px;
+    left: 0;
     margin: 0 auto;
     padding: 22px 16px;
     width: 1280px;
     border-radius: 12px;
     background: #FFF;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.05), 0 4px 4px 0 rgba(0, 0, 0, 0.04);
+    z-index: 99999;
 }
 nav .nav-wrapper{
     display: flex;
@@ -78,15 +80,257 @@ nav .nav-wrapper .nav-btn .nav-text a{
 
 nav .nav-wrapper .nav-btn:hover{
     background: var(--012, linear-gradient(270deg, #FF8432 0%, #E03FD0 100%));
-
-    
+  
 }
 
 /* ============================================================= */
 
-#banner-part{
+/* #banner-part{
     padding-top: 85px;
+    background: url(../images/banner\ bg.png) no-repeat center;
+    background-size: cover;
+    height: 1184px;
 }
+#banner-part .border-main{
+    padding-top: 64px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+}
+
+#banner-part .border-top{
+    position: absolute;
+    top: 145px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(12, 12, 12, 0.08);
+}
+#banner-part .border-top .top-img1{
+    position: absolute;
+    top: -12px;
+    left: 271px;
+    z-index: 1;
+}
+#banner-part .border-top .top-img2{
+    position: absolute;
+    top: -12px;
+    left: 420px;
+    z-index: 1;
+}
+#banner-part .border-top .top-img3{
+    position: absolute;
+    top: -12px;
+    right: 290px;
+    z-index: 1;
+}
+#banner-part .border-top .top-img4{
+    position: absolute;
+    top: -12px;
+    right: 440px;
+    z-index: 1;
+}
+#banner-part .border-main .border-left1{
+    position: absolute;
+    top: -43px;
+    left: 211px;
+    width: 1px;
+    height: 1076px;
+    background: rgba(12, 12, 12, 0.08);
+    margin-left: 72px;
+}
+#banner-part .border-main .border-left2{
+    position: absolute;
+    top: -43px;
+    left: 360px;
+    width: 1px;
+    height: 1076px;
+    background: rgba(12, 12, 12, 0.08);
+    margin-left: 72px;
+}
+#banner-part .border-main .border-right1{
+    position: absolute;
+    top: -43px;
+    right: 300px;
+    width: 1px;
+    height: 1076px;
+    background: rgba(12, 12, 12, 0.08);
+    margin-left: 72px;
+}
+#banner-part .border-main .border-right2{
+    position: absolute;
+    top: -43px;
+    right: 450px;
+    width: 1px;
+    height: 1076px;
+    background: rgba(12, 12, 12, 0.08);
+    margin-left: 72px;
+}
+
+#banner-part .banner-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#banner-part .banner-wrapper .banner-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 18px 9px 10px;
+    gap: 8px;
+    border-radius: 100px;
+    background: rgba(12, 12, 12, 0.04);
+    margin-top: 57px;
+}
+#banner-part .banner-wrapper .banner-title img{
+    width: 20px;
+    height: 20px;
+}
+#banner-part .banner-wrapper .banner-title h6{
+    color: #666;
+    font-family: Geist;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; 
+}
+#banner-part .banner-wrapper .banner-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 33px;
+    padding-bottom: 20px;
+}
+#banner-part .banner-wrapper .banner-heading .heading-top{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+#banner-part .banner-wrapper .banner-heading .heading-top img{
+    padding: 0 15px;
+}
+#banner-part .banner-wrapper .banner-heading h1{
+    color: #0C0C0C;
+    text-align: center;
+    font-family: Geist;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 72px;
+    letter-spacing: -0.96px;
+    text-transform: capitalize;
+}
+#banner-part .banner-wrapper p{
+    max-width: 630px;
+    color: #666;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+}
+
+#banner-part .banner-wrapper .banner-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin: 40px 0 60px 0;
+    padding: 4px 6px 4px 24px;
+    border-radius: 12px;
+    border: 1.5px solid rgba(12, 12, 12, 0.12);
+    background: var(--012, linear-gradient(270deg, #FF8432 0%, #E03FD0 100%));
+    transition: all linear .3s;
+}
+#banner-part .banner-wrapper .banner-btn .banner-text a{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.16px;
+}
+
+#banner-part .banner-wrapper .banner-btn:hover{
+    background: #0C0C0C;
+}
+#banner-part .banner-wrapper .banner-bottom-img img{
+    width: 1200px;
+    height: 882.702px;
+    border: 0.988px solid rgba(255, 255, 255, 0.40);
+    background: rgba(255, 255, 255, 0.17);
+    backdrop-filter: blur(10.873147010803223px);
+}
+
+
+
+
+#company-logos{
+    position: relative;
+    background: #FFF;
+    height: 250px;
+}
+
+#company-logos .company-wrapper{
+    padding-top: 80px;
+
+}
+#company-logos .company-wrapper .company-heading{
+    text-align: center;
+
+}
+#company-logos .company-wrapper .company-heading h4{
+    color: #0C0C0C;
+    font-family: Geist;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 30px; 
+
+}
+#company-logos .company-wrapper .company-logo{
+    width: 1363px;
+    height: 98px;
+
+} */
+
+.divider{
+    width: 100vw;
+    border-top: 1px solid #000;
+}
+
+#banner {
+    margin-top: 100px;
+
+}
+#banner .border{
+    width: 100%;
+    min-height: 60vh;
+    /* border-top: 1px solid #000; */
+    border-left: 5px solid red;
+    border-right: 5px solid blue;
+}
+.border .border-inner{
+    width: 80%;
+    height: 60vh;
+    border-left: 5px solid red;
+    border-right: 5px solid blue;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
 
 
 
