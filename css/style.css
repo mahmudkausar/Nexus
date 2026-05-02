@@ -758,16 +758,16 @@ nav .nav-wrapper .nav-btn:hover{
     align-items: center;
     flex-direction: column;
 }
-#step-part .step-wrapper h2{
+#step-part .step-wrapper h2 {
     color: #0C0C0C;
     text-align: center;
     font-family: Geist;
     font-size: 56px;
     font-style: normal;
     font-weight: 500;
-    line-height: 62px; /* 110.714% */
+    line-height: 62px;
     letter-spacing: -1.12px;
-    padding: 20px 0;
+    padding: 20px 0 56px 0;
 }
 
 #step-part .step-wrapper .step-card-main{
@@ -877,8 +877,8 @@ nav .nav-wrapper .nav-btn:hover{
 /* ==================================================== */
 
 #works-part{
+    margin-bottom: -115px;
 }
-
 
 #works-part .divider{
     width: 100%;
@@ -992,7 +992,7 @@ nav .nav-wrapper .nav-btn:hover{
     font-weight: 500;
     line-height: 62px; /* 110.714% */
     letter-spacing: -1.12px;
-    padding: 20px 0;
+    padding: 56px 0 0 0;
 }
 
 #works-part .works-wrapper .works-main{
@@ -1097,6 +1097,330 @@ nav .nav-wrapper .nav-btn:hover{
     line-height: 24px; /* 150% */
     opacity: 0.7;
 }
+
+
+/* ====================================================== */
+#pricing-part{
+}
+#pricing-part .divider{
+    width: 100%;
+    border-top: 1px solid rgba(12, 12, 12, 0.08);
+    position: relative;
+
+}
+#pricing-part .divider .top-img1{
+    position: absolute;
+    top: -13px;
+    left: -11px;
+    animation: spin 6s linear infinite;
+    
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#pricing-part .divider .top-img2{
+    position: absolute;
+    top: -14px;
+    right: -13px;
+    animation: spin 6s linear infinite;
+    
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#pricing-part .border{
+    width: 100%;
+    min-height: 100vh;
+    border-left: 1px solid rgba(12, 12, 12, 0.08);
+    border-right: 1px solid rgba(12, 12, 12, 0.08);
+    position: relative;
+    top: -195px;
+    left: 0;
+}
+
+#pricing-part .pricing-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 192px;
+}
+
+#pricing-part .pricing-wrapper .pricing-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 9px 18px 9px 10px;
+    border-radius: 100px;
+    border: 0.5px solid rgba(12, 12, 12, 0.08);
+    background: #FFF;
+    box-shadow: 0 2px 0.5px 0 rgba(0, 0, 0, 0.11);
+    margin-top: 92px;
+    max-width: 125px;
+    transition: all linear .3s;
+}
+#pricing-part .pricing-wrapper .pricing-title:hover{
+    background: #000;
+}
+#pricing-part .pricing-wrapper .pricing-title:hover h6{
+    color: #FFF;
+}
+#pricing-part .pricing-wrapper .pricing-title img{
+    width: 24px;
+    height: 24px; 
+    animation: spin 6s linear infinite;
+    
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#pricing-part .pricing-wrapper .pricing-title h6{
+    color: #666;
+    font-family: Geist;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    transition: all linear .3s;
+}
+#pricing-part .pricing-wrapper .pricing-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#pricing-part .pricing-wrapper h2{
+    color: #0C0C0C;
+    text-align: center;
+    font-family: Geist;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 62px; /* 110.714% */
+    letter-spacing: -1.12px;
+    padding: 20px 0;
+}
+#pricing-part .pricing-wrapper .heading-p{
+    max-width: 716px;
+    color: #666;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; 
+    padding-bottom: 56px;
+}
+
+#pricing-part .pricing-wrapper .pricing-card{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+#pricing-part .pricing-wrapper .pricing-card .pricing-left:hover{
+    background: url(../images/pricing\ bg.png) no-repeat center;
+    background-size: cover;
+    border-radius: 24px;
+    border: 1px solid #FF8432;
+
+}
+
+#pricing-part .pricing-wrapper .pricing-card .pricing-left .pricing-top .pricing-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    padding: 4px 6px 4px 24px;
+    border-radius: 12px;
+    border: 1.5px solid rgba(12, 12, 12, 0.12);
+    background: #0C0C0C;
+    transition: all linear .3s;
+}
+
+
+
+
+#pricing-part .pricing-wrapper .pricing-btn .pricing-text a{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.16px;
+}
+
+#pricing-part .pricing-wrapper .pricing-card .pricing-left .pricing-top .pricing-btn:hover{
+    background: var(--012, linear-gradient(270deg, #FF8432 0%, #E03FD0 100%));
+}
+
+#pricing-part .pricing-bottom-img{
+    text-align: center;
+}
+#pricing-part .pricing-wrapper .pricing-left{
+    padding: 16px 16px 32px 16px;
+    border-radius: 24px;
+    background: #F5F5F5;
+}
+#pricing-part .pricing-wrapper .pricing-top{
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 16px;
+    background: #FFF;
+}
+
+#pricing-part .pricing-wrapper .pricing-top .pricing-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+#pricing-part .pricing-wrapper .pricing-top .pricing-logo img{
+    animation: spin 6s linear infinite;
+}
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+#pricing-part .pricing-wrapper .pricing-top strong{
+    color: #0C0C0C;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px; /* 133.333% */
+    letter-spacing: -0.24px;
+    padding-top: 27px;
+    padding-bottom: 75px;
+}
+
+#pricing-part .pricing-wrapper .pricing-top .btn-main{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#pricing-part .pricing-wrapper .pricing-top .btn-main .dollar{
+    color: #0C0C0C;
+    font-family: Inter;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+#pricing-part .pricing-wrapper .pricing-top .btn-main .month{
+    color: #0C0C0C;
+    font-family: Inter;
+    font-size: 27.119px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.136px;
+}
+
+#pricing-part .pricing-wrapper .pricing-bottom .pricing-iteams{
+    display: flex;
+    align-items: center;
+    gap: 120px;
+    padding-top: 40px;
+    padding-bottom: 17px;
+}
+
+#pricing-part .pricing-wrapper .pricing-bottom .pricing-iteams .iteam-left{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 24px;
+
+}
+#pricing-part .pricing-wrapper .pricing-bottom .pricing-iteams .iteam-right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+#pricing-part .pricing-wrapper .pricing-bottom .pricing-iteams .iteam-left .iteam{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+}
+#pricing-part .pricing-wrapper .pricing-bottom .pricing-iteams .iteam-right .iteam{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 12px;
+}
+
+#pricing-part .pricing-wrapper .pricing-bottom .pricing-iteams .iteam-left img{
+    width: 24px;
+    height: 24px;
+}
+#pricing-part .pricing-wrapper .pricing-bottom .pricing-iteams .iteam-left p{
+    color: #666;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+#pricing-part .pricing-wrapper .pricing-bottom .pricing-iteams .iteam-right img{
+    width: 24px;
+    height: 24px;
+}
+#pricing-part .pricing-wrapper .pricing-bottom .pricing-iteams .iteam-right p{
+    color: #666;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+#pricing-part .pricing-wrapper .pricing-bottom{
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
