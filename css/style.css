@@ -307,12 +307,13 @@ nav .nav-wrapper .nav-btn:hover{
     position: relative;
 }
 #company-logos .company-wrapper .company-logo {
-    width: max-content; 
+    width: max-content;
     height: 98px;
     display: flex;
     align-items: center;
-    gap: 110px; 
-    animation: scrollLeftToRight 20s linear infinite; 
+    gap: 110px;
+    animation: scrollLeftToRight 20s linear infinite;
+    margin-top: 24px;
 }
 #company-logos .company-wrapper .company-logo img{
     width: 130px;
@@ -920,7 +921,7 @@ nav .nav-wrapper .nav-btn:hover{
 }
 #works-part .border {
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     border-left: 1px solid rgba(12, 12, 12, 0.08);
     border-right: 1px solid rgba(12, 12, 12, 0.08);
     position: relative;
@@ -978,11 +979,12 @@ nav .nav-wrapper .nav-btn:hover{
     line-height: 22px;
     transition: all linear .3s;
 }
-#works-part .works-wrapper .works-heading{
+#works-part .works-wrapper .works-heading {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 56px;
 }
 #works-part .works-wrapper h2{
     color: #0C0C0C;
@@ -993,7 +995,7 @@ nav .nav-wrapper .nav-btn:hover{
     font-weight: 500;
     line-height: 62px; /* 110.714% */
     letter-spacing: -1.12px;
-    padding: 56px 0 0 0;
+    padding: 20px 0 0 0;
 }
 
 #works-part .works-wrapper .works-main{
@@ -1140,11 +1142,11 @@ nav .nav-wrapper .nav-btn:hover{
 }
 #pricing-part .border{
     width: 100%;
-    min-height: 100vh;
+    min-height: 120vh;
     border-left: 1px solid rgba(12, 12, 12, 0.08);
     border-right: 1px solid rgba(12, 12, 12, 0.08);
     position: relative;
-    top: -195px;
+    top: -85px;
     left: 0;
 }
 
@@ -1153,7 +1155,7 @@ nav .nav-wrapper .nav-btn:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 192px;
+    padding-top: 92px;
 }
 
 #pricing-part .pricing-wrapper .pricing-title{
@@ -1713,7 +1715,7 @@ nav .nav-wrapper .nav-btn:hover{
 }
 #faq-part .border{
     width: 100%;
-    min-height: 100vh;
+    min-height: 80vh;
     border-left: 1px solid rgba(12, 12, 12, 0.08);
     border-right: 1px solid rgba(12, 12, 12, 0.08);
     position: relative;
@@ -1928,7 +1930,7 @@ nav .nav-wrapper .nav-btn:hover{
 }
 #customer-part .border {
     width: 100%;
-    min-height: 155vh;
+    min-height: 100vh;
     border-left: 1px solid rgba(12, 12, 12, 0.08);
     border-right: 1px solid rgba(12, 12, 12, 0.08);
     position: relative;
@@ -2241,7 +2243,8 @@ footer .footer-wrapper .footer-bottom .up-right .name strong{
     font-size: 18px;
     font-style: normal;
     font-weight: 500;
-    line-height: 26px; /* 144.444% */
+    line-height: 26px; 
+    transition: all linear .3s
 } 
 footer .footer-wrapper .footer-bottom .up-right ul li a{
     color: #FFF;
@@ -2249,7 +2252,8 @@ footer .footer-wrapper .footer-bottom .up-right ul li a{
     font-size: 14px;
     font-style: normal;
     font-weight: 400;
-    line-height: 22px; /* 157.143% */
+    line-height: 22px;
+    transition: all linear .3s;
 } 
 footer .footer-wrapper .footer-bottom .up-right .iteams{
     display: flex;
@@ -2275,7 +2279,12 @@ footer .footer-wrapper .footer-bottom .up-right .footer-icons img{
     width: 40px;
     height: 40px;
 }
-
+footer .footer-wrapper .footer-bottom .up-right .name strong:hover{
+    color: #F77358;
+}
+footer .footer-wrapper .footer-bottom .up-right .name a:hover{
+    color: #F77358;
+}
 footer .footer-wrapper .footer-bottom .bottom-down{
     display: flex;
     justify-content: center;
