@@ -1702,7 +1702,7 @@ nav .nav-wrapper .nav-btn:hover{
     position: absolute;
     top: -14px;
     right: -13px;
-    animation: spin 6s linear;
+    animation: spin 6s linear infinite;
     
 }
 @keyframes spin {
@@ -1917,7 +1917,7 @@ nav .nav-wrapper .nav-btn:hover{
     position: absolute;
     top: -14px;
     right: -13px;
-    animation: spin 6s linear;
+    animation: spin 6s linear infinite;
     
 }
 @keyframes spin {
@@ -2100,7 +2100,7 @@ footer .divider .top-img2{
     position: absolute;
     top: -14px;
     right: -13px;
-    animation: spin 6s linear;
+    animation: spin 6s linear infinite;
     
 }
 @keyframes spin {
@@ -2190,7 +2190,8 @@ footer .footer-wrapper .footer-bottom .up-left .logo{
 footer .footer-wrapper .footer-bottom .up-left .logo img{
     width: 60px;
     height: 60px;
-   animation: spin 6s linear;
+    animation: spin 6s linear infinite;
+    
 }
 @keyframes spin {
     0% {
